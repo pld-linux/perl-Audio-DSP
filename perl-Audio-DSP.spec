@@ -10,7 +10,8 @@ Summary(pl):	Modu³ Perla Audio::DSP - interfejs do uniksowego cyfrowego urz±dzen
 Name:		perl-Audio-DSP
 Version:	0.02
 Release:	2
-License:	Artistic or GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	7c3027a732d14665d4ffec0aff4b548e
