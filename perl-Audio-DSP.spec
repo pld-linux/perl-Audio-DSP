@@ -6,7 +6,7 @@
 %define		pdir	Audio
 %define		pnam	DSP
 Summary:	Audio::DSP Perl module - interface to *NIX digital audio device
-Summary(pl):	Modu³ Perla Audio::DSP - interfejs do *niksowego urz±dzenia cyfrowego d¼wiêku
+Summary(pl):	Modu³ Perla Audio::DSP - interfejs do uniksowego cyfrowego urz±dzenia cyfrowego d¼wiêkowego
 Name:		perl-Audio-DSP
 Version:	0.02
 Release:	2
