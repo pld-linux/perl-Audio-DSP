@@ -1,6 +1,7 @@
 #
 # Conditional build:
-# _with_tests - perform "make test" (requires working /dev/dsp)
+%bcond_with	tests	# perform "make test" (requires working /dev/dsp)
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Audio
 %define		pnam	DSP
@@ -37,7 +38,7 @@ surowe dane d¼wiêkowe.
 	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
-%{?_with_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
