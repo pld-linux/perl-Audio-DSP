@@ -8,12 +8,12 @@ Summary:	Audio::DSP Perl module - interface to *NIX digital audio device
 Summary(pl):	Modu³ Perla Audio::DSP - interfejs do *niksowego urz±dzenia cyfrowego d¼wiêku
 Name:		perl-Audio-DSP
 Version:	0.02
-Release:	1
+Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl-devel >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -32,7 +32,8 @@ surowe dane d¼wiêkowe.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %{?_with_tests:%{__make} test}
@@ -49,9 +50,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitearch}/Audio/DSP.pm
-%dir %{perl_sitearch}/auto/Audio/DSP
-%{perl_sitearch}/auto/Audio/DSP/autosplit.ix
-%{perl_sitearch}/auto/Audio/DSP/*.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Audio/DSP/*.so
+%{perl_vendorarch}/Audio/DSP.pm
+%dir %{perl_vendorarch}/auto/Audio/DSP
+%{perl_vendorarch}/auto/Audio/DSP/autosplit.ix
+%{perl_vendorarch}/auto/Audio/DSP/*.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Audio/DSP/*.so
 %{_mandir}/man3/*
