@@ -9,7 +9,7 @@ Summary:	Audio::DSP Perl module - interface to *NIX digital audio device
 Summary(pl):	Modu³ Perla Audio::DSP - interfejs do uniksowego cyfrowego urz±dzenia cyfrowego d¼wiêkowego
 Name:		perl-Audio-DSP
 Version:	0.02
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
