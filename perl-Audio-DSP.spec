@@ -6,7 +6,7 @@
 %define		pdir	Audio
 %define		pnam	DSP
 Summary:	Audio::DSP Perl module - interface to *NIX digital audio device
-Summary(pl):	Modu³ Perla Audio::DSP - interfejs do uniksowego cyfrowego urz±dzenia cyfrowego d¼wiêkowego
+Summary(pl.UTF-8):   ModuÅ‚ Perla Audio::DSP - interfejs do uniksowego cyfrowego urzÄ…dzenia cyfrowego dÅºwiÄ™kowego
 Name:		perl-Audio-DSP
 Version:	0.02
 Release:	3
@@ -25,11 +25,11 @@ Perl to interface with a digital audio device. The Audio::DSP object
 stores I/O parameters and also supplies temporary storage for raw
 audio data.
 
-%description -l pl
-Modu³ Audio::DSP jest oparty na API systemu OSS (Open Sound System) i
-pozwala Perlowi na dostêp do urz±dzenia cyfrowego d¼wiêku. Obiekt
-Audio::DSP przechowuje parametry wej¶cia/wyj¶cia oraz tymczasowo
-surowe dane d¼wiêkowe.
+%description -l pl.UTF-8
+ModuÅ‚ Audio::DSP jest oparty na API systemu OSS (Open Sound System) i
+pozwala Perlowi na dostÄ™p do urzÄ…dzenia cyfrowego dÅºwiÄ™ku. Obiekt
+Audio::DSP przechowuje parametry wejÅ›cia/wyjÅ›cia oraz tymczasowo
+surowe dane dÅºwiÄ™kowe.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
