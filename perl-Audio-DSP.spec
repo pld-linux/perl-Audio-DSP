@@ -58,6 +58,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Audio/DSP.pm
 %dir %{perl_vendorarch}/auto/Audio/DSP
 %{perl_vendorarch}/auto/Audio/DSP/autosplit.ix
-%{perl_vendorarch}/auto/Audio/DSP/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Audio/DSP/*.so
 %{_mandir}/man3/*
