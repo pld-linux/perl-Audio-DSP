@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_with	tests	# perform "make test" (requires working /dev/dsp)
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Audio
 %define		pnam	DSP
+%include	/usr/lib/rpm/macros.perl
 Summary:	Audio::DSP Perl module - interface to *NIX digital audio device
 Summary(pl.UTF-8):	Moduł Perla Audio::DSP - interfejs do uniksowego cyfrowego urządzenia cyfrowego dźwiękowego
 Name:		perl-Audio-DSP
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	7c3027a732d14665d4ffec0aff4b548e
+URL:		http://search.cpan.org/dist/Audio-DSP/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
