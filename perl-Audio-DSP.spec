@@ -4,7 +4,6 @@
 
 %define		pdir	Audio
 %define		pnam	DSP
-%include	/usr/lib/rpm/macros.perl
 Summary:	Audio::DSP Perl module - interface to *NIX digital audio device
 Summary(pl.UTF-8):	Moduł Perla Audio::DSP - interfejs do uniksowego cyfrowego urządzenia cyfrowego dźwiękowego
 Name:		perl-Audio-DSP
